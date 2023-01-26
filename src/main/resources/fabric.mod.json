@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "example_template",
+  "version": "${version}",
+  "name": "Example_template",
+  "description": "Example template",
+  "authors": [
+    "JoostMSoftware"
+  ],
+  "contact": {
+    "website": "https://fabricmc.net",
+    "repo": "https://github.com/RadianceMC/Fabric-Example-Template"
+  },
+  "license": "MIT",
+  "icon": "assets/example_template/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.example.example_template.client.ExampleTemplateClient"
+    ],
+    "main": [
+      "com.example.example_template.ExampleTemplate"
+    ],
+    "fabric-datagen": [
+      "com.example.example_template.datagen.ExampleTemplateDatagen"
+    ]
+  },
+  "mixins": [
+    "example_template.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.13",
+    "fabric": "*",
+    "minecraft": "1.19.2",
+    "forgeconfigapiport": ">=4.2.10"
+  }
+}
